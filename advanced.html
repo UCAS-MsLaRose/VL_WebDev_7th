@@ -3,21 +3,48 @@
     <head>
         <title>HTML Advanced Notes</title>
         <meta charset="UTF-8">
+        <style>
+            /* Cascading Style Sheets 
+            1. Selector => says what to change
+            2. Declaration 
+                a. Property => What about the element to change
+                b. Value => How to change it
+            */
+            body{
+                color:dodgerblue;
+                background-color: rgb(241, 222, 183);
+                border: inset 5px #070e3a;
+            }
+            h1{
+                text-align: center;
+            }
+            #even{
+                color:chocolate;
+                text-decoration: underline;
+            }
+            .lists{
+                width: 50%;
+                background-color: orange;
+                border-radius: 5px;
+                font-size: .75rem;
+            }
+        </style>
     </head>
     <body>
         <h1>Html Advanced Notes</h1>
+        <div class="lists">
         <h3>Lists:</h3>
         <ol type="a">
             <li>Alex</li>
-            <li>Katie</li>
+            <li id="even">Katie</li>
             <li>Andrew</li>
-            <li>Vienna</li>
+            <li id="even">Vienna</li>
         </ol>
         <ul>
             <li><a href="https://labonnes.com/blog/2026/4/8/types-of-apples-a-complete-guide-to-choosing-the-best-at-the-market" target="_blank">Apple</a></li>
-            <li>Orange</li>
+            <li id="even">Orange</li>
             <li>Banana</li>
-            <li>Peach</li>
+            <li id="even">Peach</li>
         </ul>
         <dl>
             <dt>Fall</dt>
@@ -28,6 +55,7 @@
             <dd>Hanukkah</dd>
             <dd>New Years</dd>
         </dl>
+        </div>
         <h3>Attributes: </h3>
         <div>
         <a href="https://www.alltrails.com/trail/us/utah/mt-timpanogos-timpooneke-trail" target="_blank"><img src="https://live.staticflickr.com/131/417516947_f3e3cb265c_b.jpg" alt="Mt Timp" width="250px"></a>
